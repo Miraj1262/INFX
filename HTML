@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFX Personality Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>INFX</h1>
+      <p>Show your personality through our dynamic filters! Upload your photo and pick your vibe.</p>
+    </header>
+
+    <!-- Image Upload Section -->
+    <section class="upload-section">
+      <h2>Upload Your Image</h2>
+      <input type="file" id="imageUpload" accept="image/*">
+      <canvas id="canvas" width="400" height="400"></canvas>
+    </section>
+
+    <!-- Personality Traits -->
+    <section class="traits-section">
+      <h2>Choose Your Personality</h2>
+      <div class="traits">
+        <button data-filter="X-Bold">X-Bold</button>
+        <button data-filter="X-Young">X-Young</button>
+        <button data-filter="X-Rebel">X-Rebel</button>
+        <button data-filter="X-Dreamer">X-Dreamer</button>
+        <button data-filter="X-Creator">X-Creator</button>
+        <button data-filter="X-Adventurer">X-Adventurer</button>
+        <button data-filter="X-Loyal">X-Loyal</button>
+        <button data-filter="X-Charismatic">X-Charismatic</button>
+        <button data-filter="X-Passionate">X-Passionate</button>
+        <button data-filter="X-Edgy">X-Edgy</button>
+      </div>
+    </section>
+
+    <!-- Download Button -->
+    <button id="downloadButton">Download Your Image</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
